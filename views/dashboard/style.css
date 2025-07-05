@@ -12,3 +12,21 @@ canvas {
   text-align: center;
   padding: 2rem 0;
 }
+
+@media screen and (max-width: 450px) {
+  .chart-container {
+    width: 100vw;
+    height: fit-content;
+    max-width: 100%;
+    margin: auto;
+  }
+  section {
+    padding: 0 10px;
+  }
+  .laporan .title {
+    font-size: 2rem;
+  }
+  .laporan .info {
+    font-size: 0.1rem;
+  }
+}

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Gender Equality</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../breakpoints.css" />
   </head>
   <body>
     <header>
@@ -15,18 +16,18 @@
         <nav>
           <ul>
             <li class="nav-items"><a href="../../index.html">home</a></li>
-            <li class="nav-items"><a href="#">profile</a></li>
-            <li class="nav-items"><a href="../login/index.html">join us</a></li>
+            <li class="nav-items"><a href="../profile/">profile</a></li>
+            <li class="nav-items"><a href="../login/">join us</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="grafik-indeks">
+    <div class="grafik-indeks">
       <h2>Indeks Kesenjangan Gender Indonesia (2020–2024)</h2>
       <div class="chart-container">
         <canvas id="genderIndexChart"></canvas>
       </div>
-    </section>
+    </div>
     <section class="laporan">
       <h2 class="title">Kondisi Kesetaraan Gender di Indonesia</h2>
       <div class="info">
@@ -37,7 +38,7 @@
             Indonesia adalah <strong>0,686</strong>, turun dari tahun sebelumnya
             yaitu <strong>0,697</strong>.
           </p>
- 
+
           <ul>
             <li>
               Pendidikan: <strong>0,971</strong>. menunjukkan kesetaraan hampir
@@ -56,7 +57,7 @@
               penurunan.
             </li>
           </ul>
- 
+
           <p>
             Pada tahun 2023, Indonesia menempati
             <strong>peringkat ke-87 dari 146 negara</strong>. Hal ini
@@ -66,13 +67,13 @@
             sumber:
           </p>
           <a
-href="https://dataindonesia.id/varia/detail/data-perkembangan-skor-indeks-kesenjangan-gender-di-indonesia-pada-20202024"
->dataindonesia.id</a
+            href="https://dataindonesia.id/varia/detail/data-perkembangan-skor-indeks-kesenjangan-gender-di-indonesia-pada-20202024"
+            >dataindonesia.id</a
           >
         </div>
       </div>
     </section>
- 
+
     <section>
       <table>
         <thead>
@@ -125,12 +126,12 @@ href="https://dataindonesia.id/varia/detail/data-perkembangan-skor-indeks-kesenj
       </table>
       <p>
         sumber: <br />
-<a href="https://www.inilah.com/rata-rata-upah-buruh-di-indonesia"
->inilah.com</a
+        <a href="https://www.inilah.com/rata-rata-upah-buruh-di-indonesia"
+          >inilah.com</a
         >
       </p>
     </section>
- 
+
     <script src="main.js"></script>
   </body>
 </html>
