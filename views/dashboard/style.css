@@ -1,0 +1,14 @@
+.chart-container {
+  width: 50vw;
+  max-width: 100%;
+  margin: auto;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+.grafik-indeks {
+  text-align: center;
+  padding: 2rem 0;
+}
