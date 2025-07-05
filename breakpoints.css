@@ -1,0 +1,300 @@
+:root {
+  --t-font-big: 2.4rem;
+  --t-font-med: 1.3rem;
+  --t-font-regular: 1.17rem;
+  --t-font-small: 1rem;
+  --t-padding: 30px;
+  --p-font-big: 2.2rem;
+  --p-font-med: 1.15rem;
+  --p-font-regular: 1rem;
+  --p-font-small: 0.9rem;
+  --p-padding: 15px;
+}
+
+@media screen and (max-width: 852px) {
+  /* body {
+    background-color: red;
+  } */
+  header .site-title {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    display: flex;
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+  main {
+    max-width: 85%;
+    padding: 0 0 0 40px;
+  }
+
+  main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  main p {
+    font-size: var(--t-font-med);
+    color: white;
+  }
+  section {
+    margin: var(--t-padding) 0;
+    padding: 0 var(--t-padding);
+  }
+  .pengertian {
+    flex-direction: column;
+  }
+
+  .pengertian h2 {
+    font-size: var(--t-font-big);
+    flex: 1;
+  }
+  .pengertian p {
+    font-size: var(--t-font-med);
+    flex: 2;
+  }
+  section .title {
+    font-size: var(--t-font-big);
+  }
+  .penting .item-1 ul li {
+    font-size: var(--font-semi);
+    list-style: decimal;
+    text-align: justify;
+  }
+  .penting .item-2 .text {
+    font-size: var(--t-font-regular);
+  }
+  .video iframe {
+    min-width: 100%;
+    min-height: 400px;
+  }
+  .galeri .tokoh {
+    position: relative;
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+  }
+  .galeri .img {
+    min-width: 70%;
+    max-width: 70%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .galeri .img img {
+    object-fit: cover;
+  }
+  .tokoh .nama {
+    font-size: var(--t-font-big);
+  }
+  .tokoh .data {
+    font-size: var(--t-font-med);
+  }
+  .tokoh-2 {
+    text-align: right;
+  }
+
+  .tokoh-2 .img {
+    align-self: flex-end;
+  }
+  .laporan .info {
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+  }
+
+  .laporan .content {
+    font-size: var(--t-font-regular);
+  }
+  .laporan ul li {
+    font-size: var(--t-font-regular);
+  }
+  .laporan .img img {
+    height: 500px;
+  }
+  table {
+    font-size: var(--t-font-small);
+  }
+  .news p {
+    font-size: var(--t-font-regular);
+  }
+  .outro .text {
+    font-size: var(--t-font-regular);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* body {
+    background-color: green;
+  } */
+
+  /* nav {
+    display: none;
+  } */
+
+  .hero {
+    max-height: 70dvh;
+    min-height: 70dvh;
+  }
+  header {
+    padding: 2px 5px;
+  }
+  header .head {
+    flex-direction: column;
+  }
+  header .site-title {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    display: flex;
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  main {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+  main h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  main p {
+    font-size: var(--p-font-med);
+    color: white;
+    text-align: justify;
+  }
+  main button {
+    font-size: var(--p-font-regular);
+  }
+  section {
+    margin: var(--p-padding) 0;
+    padding: 0 10px;
+  }
+  .pengertian {
+    flex-direction: column;
+  }
+
+  .pengertian h2 {
+    font-size: var(--p-font-big);
+    flex: 1;
+  }
+  .pengertian p {
+    font-size: var(--p-font-med);
+    flex: 2;
+  }
+  section .title {
+    font-size: var(--p-font-big);
+  }
+  .penting .item-1 ul li {
+    font-size: var(--font-semi);
+    list-style: decimal;
+    text-align: justify;
+  }
+  .penting .item-2 .text {
+    font-size: var(--p-font-regular);
+  }
+  .video iframe {
+    width: 100%;
+    min-height: 200px;
+  }
+  .galeri {
+    padding: 0 5px;
+  }
+  .galeri .tokoh {
+    position: relative;
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+  }
+  .galeri .img {
+    min-width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .galeri img {
+    width: max-content;
+  }
+  .galeri .toggle {
+    top: 20px;
+    left: 20px;
+  }
+  .galeri .tokoh-2 .toggle {
+    left: 20px;
+  }
+
+  .tokoh .nama {
+    font-size: var(--p-font-big);
+  }
+  .tokoh .data {
+    font-size: var(--p-font-med);
+  }
+  .tokoh-2 {
+    text-align: left;
+  }
+
+  .tokoh-2 .img {
+    align-self: flex-end;
+  }
+  .laporan .info {
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+  }
+
+  .laporan .content {
+    font-size: var(--p-font-regular);
+  }
+  .laporan ul li {
+    font-size: var(--p-font-regular);
+    margin-left: 25px;
+  }
+  .laporan .img img {
+    height: fit-content;
+  }
+  table {
+    font-size: var(--p-font-small);
+  }
+  .news p {
+    font-size: var(--p-font-regular);
+  }
+  .outro .text {
+    font-size: var(--p-font-regular);
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+    color: white;
+    padding: 10px 5px;
+  }
+  footer .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+  footer .main .info {
+    font-size: var(--p-font-small);
+  }
+  footer form .title {
+    font-size: var(--p-font-med);
+  }
+  form input {
+    font-size: var(--p-font-small);
+  }
+
+  form button {
+    font-size: var(--p-font-small);
+  }
+  .overlay {
+    padding: 0 5px;
+  }
+  .overlay img {
+    width: 100%;
+  }
+}
