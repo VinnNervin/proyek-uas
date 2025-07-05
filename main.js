@@ -1,18 +1,21 @@
-const imgaeContainer = document.querySelectorAll(".img")
-const body = document.querySelector("header")
-imgaeContainer.forEach((item) => {
+const image = document.querySelectorAll(".img")
+const header = document.querySelector("header")
+const submitBtn = document.querySelector("form button")
+
+image.forEach((item) => {
     item.addEventListener("click", () => {
         const div = document.createElement("div")
         const img = document.createElement('img')
         img.src = item.children[0].src
         div.classList.add("overlay")
         div.appendChild(img)
-        body.appendChild(div)
-        console.log('wkwkk');
-
+        header.appendChild(div)
         div.addEventListener('click', () => {
-            body.removeChild(div)
+            header.removeChild(div)
         })
     })
 })
-console.log(body);
+
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+})
