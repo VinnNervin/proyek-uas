@@ -32,6 +32,6 @@ btn.addEventListener('click', (e) => {
     }
     console.log('done')
     e.preventDefault()
-    return window.location.href = '../../main.html'
+    return window.location.href = '../../index.html'
 
 })
